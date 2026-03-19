@@ -39,6 +39,7 @@ const checkPort = async (port, maxPort = 65535) => {
     // Routes
     app.use('/api/items', require('./routes/items'));
     app.use('/api/stats', require('./routes/stats'));
+    app.use('/api/query', require('./routes/query.routes'));
 
     require('./config/dbHandler.js').connect();
 

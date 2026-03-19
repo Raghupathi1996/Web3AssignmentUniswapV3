@@ -1,0 +1,96 @@
+{
+  "info": {
+    "_postman_id": "69a5c689-7125-49ae-93b9-31a9d7f72254",
+    "name": "Web3_uniswapV3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "18546529",
+    "_collection_link": "https://go.postman.co/collection/18546529-69a5c689-7125-49ae-93b9-31a9d7f72254?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "ethRequired_for_UNI",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3001/api/query/query",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3001",
+          "path": [
+            "api",
+            "query",
+            "query"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "ethRequired_for_UNI",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/api/query/query",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3001",
+              "path": [
+                "api",
+                "query",
+                "query"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:3001"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "102"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"66-JcpwLhILeq6NY+7U7je+0l9Idks\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 19 Mar 2026 15:51:23 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Current UNI balance: 0 UNI, ETH needed for 10 UNI: 0 ETH\",\n    \"uniBalance\": \"0\",\n    \"ethQuote\": \"0\"\n}"
+        }
+      ]
+    }
+  ]
+}
